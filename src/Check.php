@@ -8,18 +8,18 @@ use Spatie\Health\Checks\Result;
 
 class Check extends HealthCheck
 {
-
-    public function run(): \Spatie\Health\Checks\Result
+    public function run(): Result
     {
-        $result = Result::make()->ok()->shortSummary("Short Summary");
+        $result = Result::make()->ok()->shortSummary('Short Summary');
 
         $measure = new LaravelHealthCheck200('https://google.com');
 
         try {
-             $testResult = $measure->test();
+            $testResult = $measure->test();
         } catch (ConnectionException $exception) {
             $result->failed("Could not find connection to {$this->url}");
         }
+
         return $result;
     }
 }

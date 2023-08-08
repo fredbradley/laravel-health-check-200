@@ -10,6 +10,7 @@ class LaravelHealthCheck200
 {
     /**
      * @return bool
+     *
      * @throws RequestException|ConnectionException
      */
     public function test()
@@ -20,5 +21,4 @@ class LaravelHealthCheck200
     public function __construct(protected string $url)
     {
     }
-
 }

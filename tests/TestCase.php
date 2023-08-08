@@ -2,8 +2,6 @@
 
 namespace FredBradley\LaravelHealthCheck200\Tests;
 
-use FredBradley\LaravelHealthCheck200\LaravelHealthCheck200ServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
