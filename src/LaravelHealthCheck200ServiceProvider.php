@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace FredBradley\LaravelHealthCheck200;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use FredBradley\LaravelHealthCheck200\Commands\LaravelHealthCheck200Command;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelHealthCheck200ServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-health-check-200')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-health-check-200_table')
+            ->hasCommand(LaravelHealthCheck200Command::class);
     }
 }

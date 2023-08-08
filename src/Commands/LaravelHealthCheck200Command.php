@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace FredBradley\LaravelHealthCheck200\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelHealthCheck200Command extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-health-check-200';
 
     public $description = 'My command';
 
