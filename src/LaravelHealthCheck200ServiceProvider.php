@@ -2,9 +2,9 @@
 
 namespace FredBradley\LaravelHealthCheck200;
 
+use FredBradley\LaravelHealthCheck200\Commands\LaravelHealthCheck200Command;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use FredBradley\LaravelHealthCheck200\Commands\LaravelHealthCheck200Command;
 
 class LaravelHealthCheck200ServiceProvider extends PackageServiceProvider
 {
